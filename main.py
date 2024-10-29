@@ -6,11 +6,9 @@ import numpy as np
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 from sklearn.datasets import load_iris
 
-# Configuration de la journalisation
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Charger le modèle
 with open("iris_model.pkl", "rb") as file:
     model = pickle.load(file)
 
